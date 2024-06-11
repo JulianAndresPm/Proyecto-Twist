@@ -1,0 +1,159 @@
+/*------------------Seccion Alta (Header)----------------------------------*/
+
+header {
+  width: 100%;
+  height: 300px;
+  background-color: #CEF09D;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.caja {
+  width: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+#img-logo {
+  width: 20%;
+  margin: 25px;
+  border-radius: 150px 150px 150px 155px;
+}
+
+nav {
+  position: absolute;
+  top: 45%;
+  right: 30px;
+  background-color: #5fd1b8;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+nav ul {
+  margin-top: 10px;
+}
+
+nav li {
+  display: inline;
+}
+
+.active-link {
+  background-color: #419282;
+  border-radius: 25px;
+}
+
+
+nav>ul>li>a {
+  padding: 15px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+
+}
+
+/* nav a:hover {
+  background-color: #419282;
+  border-radius: 25px;
+} */
+
+#select {
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #CEF09D;
+  border-radius: 25px;
+}
+
+.caja img {
+  width: 30px;
+  margin-left: 15px;
+  width: 30px;
+  margin-left: -20px;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.caja button {
+  color: white;
+  font-size: 20px;
+  top: 10px;
+  margin-top: -1px;
+  margin-right: 12px;
+}
+
+/* .caja button:hover {
+  background-color: #419282;
+  border-radius: 25px;
+} */
+
+/*--- Wave ---*/
+
+.wave{
+    width: 100%;
+    height: 115px;
+    left: 0;
+    position: absolute;
+    top: 185px;
+    background-image: url(../../../assets/img/wave.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------Off canva--------------*/
+/*
+.offcanvas-header {
+  background: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+  color: white;
+}
+
+.carrito {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.offcanvas-title {
+  margin-top: 60px;
+  margin-left: 45px;
+  font-size: 25px;
+}
+
+
+.carrito img {
+  width: 100%;
+}
+
+.producto p {
+  text-align: justify;
+}
+
+.producto select {
+  padding: 15px;
+}
+
+.producto .precio {
+  font-size: 17px;
+  color: goldenrod;
+}
+
+.offcanvas-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.btn-offcanva {
+  text-align: center;
+  margin: 25px 40px;
+  padding: 12px 0px;
+  background: black;
+  color: white;
+  font-size: 15px;
+}
+
+.btn-offcanva:hover {
+  background: #add672;
+  color: white;
+} */
+
+.carrito{
+  font-size: 27px;
+  font-family: 'Orbitron', sans-serif;
+}

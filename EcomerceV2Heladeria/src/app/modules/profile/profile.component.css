@@ -1,0 +1,61 @@
+.mian-perfil {
+  margin: auto;
+  *display: flex;
+  *flex-direction: column;
+  *align-items: center;
+  *margin: 30px;
+  *justify-content: center;
+}
+
+.mian-perfil h1 {
+  padding-bottom: 10px;
+}
+
+.mian-perfil h1 {
+  text-align: center;
+  margin-top: -85px;
+  margin-bottom: 58px;
+  margin-top: 10px;
+}
+
+.perfil{
+  font-size: 10px;
+}
+.mian-perfil .input_form {
+  padding: 9px;
+  border: 1px solid #CEF09D;
+}
+
+.mian-perfil .btn_form {
+  font-size: 22px;
+  font: bold;
+  background: #CEF09D;
+  padding: 4px 26px;
+  position:absolute;
+  border-radius: 10px;
+  z-index: 10;
+  right: 45%;
+  bottom: -12%;
+}
+
+.mian-perfil .btn_form:hover {
+  background: black;
+  color: white;
+}
+
+.form-update{
+  text-align: center;
+}
+
+.input_form {
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+.perfil {
+  font-size: 30px;
+}

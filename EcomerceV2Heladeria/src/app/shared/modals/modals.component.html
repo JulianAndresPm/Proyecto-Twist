@@ -1,0 +1,43 @@
+<ng-template pTemplate="header">Header Content</ng-template>
+
+
+
+
+<div class="caja_principal">
+  <!-- <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Carrito</h5>
+    <button type="button" class="btn-close" (click)="closeModal()"></button>
+  </div> -->
+
+  <ng-template pTemplate="content">Body Content</ng-template>
+
+
+  <div class="carro" *ngFor="let item of dataCar" >
+    <div class="offcanvas-body">
+      <div class="carrito">
+        <img class="img-productos" src={{item.imgUrl}} alt="producto">
+        <div class="producto">
+          <p>{{item.NombreProducto}}</p>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <!-- <p-dropdown [options]="numbers" [(ngModel)]="selectedValue" optionLabel="name"></p-dropdown> -->
+          <button class="btn-eliminar" ><img class="img-eliminar" src="assets/img/eliminar.png" alt="eliminar"></button>
+        </div>
+        <p class="precio">Precios: $ {{item.subTotal}}</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="offcanvas-footer">
+    <p>Total:</p>
+    <p>${{precioTotal()}}</p>
+  </div>
+
+  <button class="btn-offcanva" (click)="swAlert()">Ordenar</button>
+</div>
+

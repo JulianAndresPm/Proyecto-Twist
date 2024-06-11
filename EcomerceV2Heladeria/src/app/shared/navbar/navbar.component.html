@@ -1,0 +1,42 @@
+<header>
+    <div class="caja">
+        <img id="img-logo" src="assets/img/logos-helados.jpg" alt="logo-helados">
+        <nav>
+            <ul>
+                <li >
+                    <a routerLink="/" routerLinkActive=""><img src="assets/img/casa.png">Home</a>
+                </li>
+                <li *ngIf="viewUser">
+                    <a routerLink="/productos" routerLinkActive="active-link"><img src="assets/img/cesta-de-mano.png">Nuestros Productos </a>
+                </li>
+                <li *ngIf="viewUser">
+                    <a routerLink="/perfil" routerLinkActive="active-link"><img src="assets/img/usuario-de-perfil.png">Perfil</a>
+                </li>
+                <li *ngIf="viewUser">
+                    <a (click)="singOut()" style="cursor: pointer;"><img src="assets/img/cerrar-sesion.png">Cerrar Sesion </a>
+                </li>
+                <li  *ngIf="!viewUser">
+                    <a routerLink="/login" routerLinkActive="active-link"><img src="assets/img/perfil-del-usuario.png">Iniciar Sesion</a>
+                </li>
+                <li  *ngIf="viewUser">
+                    <button class="btn" type="button" (click)="openModal()">
+                        <img src="assets/img/carrito-de-compras.png" alt="">
+                        Carrito
+                    </button>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="wave"></div>
+
+</header>
+
+<p-sidebar [(visible)]="viewModal" position="right" styleClass="w-30rem">
+  <ng-template pTemplate="header">
+   <div class="carrito">Carrito</div> 
+  </ng-template>
+  <ng-template pTemplate="content"><app-modals [dataCar]="dataCar"></app-modals></ng-template>
+</p-sidebar>
+
+
